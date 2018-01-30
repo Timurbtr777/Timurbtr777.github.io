@@ -3,19 +3,76 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Boats</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <!-- Epic styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google roboto font -->
+    <!--<link href='http://fonts.googleapis.com/css?family=Roboto:500,900,300,700,400' rel='stylesheet' type='text/css'>-->
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <title>WEB Application by Timur Badretdinov</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
     <script src="TemplateData/UnityProgress.js"></script>
   </head>
+  
+  
+  
   <body class="template">
-    <div class="template-wrap clear">
+	
+	<p style="color: white; z-index: 10; font-size: 44px;" >Добро пожаловать на сайт мини-игры 'Лодка'"</p>
+ 
+	
+    <div class="template-wrap clear" style="z-index: 2;">
       <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
       <br>
       <div class="logo"></div>
       <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
-      <div class="title">Boats</div>
+      <div class="title">Лодка</div>
     </div>
+	<div class="backwrap gradient">
+        <div class="back-shapes">
+		<em class="active epic-icon fa fa-windows floating" style="top:8.460236886632826%;left:2.65625%;animation-delay:-3.55s;"></em>
+<em class="active epic-icon fa fa-windows floating" style="top:3.7225042301184432%;left:92.5%;animation-delay:-1.2s;"></em>
+<em class="active epic-icon fa fa-thumbs-o-up floating" style="top:54.145516074450086%;left:92.34375%;animation-delay:-0.4s;"></em>
+<em class="active epic-icon fa fa-thumbs-up floating" style="top:40.77834179357022%;left:2.265625%;animation-delay:-0.7s;"></em>
+<em class="active epic-icon fa fa-tablet floating" style="top:28.087986463620982%;left:81.5625%;animation-delay:-0.95s;"></em>
+<em class="active epic-icon fa fa-play floating" style="top:40.609137055837564%;left:11.5625%;animation-delay:-1.4s;"></em>
+<em class="epic-icon fa fa-globe active floating" style="top:73.09644670050761%;left:6.875%;animation-delay:-2.55s;"></em>
+<em class="epic-icon fa fa-globe active floating" style="top:67.85109983079526%;left:82.8125%;animation-delay:-1.05s;"></em>
+<em class="active epic-icon fa fa-html5 floating" style="top:6.429780033840948%;left:9.21875%;animation-delay:-2.85s;"></em>
+<em class="active epic-icon fa fa-git-square floating" style="top:7.783417935702199%;left:80%;animation-delay:-0s;"></em>
+<em class="active epic-icon fa fa-gamepad floating" style="top:85.27918781725889%;left:71.5625%;animation-delay:-2.35s;"></em>
+<em class="active epic-icon fa fa-gamepad floating" style="top:80.03384094754654%;left:39.21875%;animation-delay:-0.1s;"></em>
+<em class="active epic-icon fa fa-gamepad floating" style="top:74.61928934010152%;left:23.4375%;animation-delay:-3.15s;"></em>
+<em class="active epic-icon fa fa-copyright floating" style="top:38.24027072758037%;left:87.5%;animation-delay:-1.95s;"></em>
+<em class="active epic-icon fa fa-copyright floating" style="top:0.8460236886632826%;left:52.5%;animation-delay:-0.9s;"></em>
+<em class="active epic-icon fa fa-heart floating" style="top:8.798646362098138%;left:22.5%;animation-delay:-4.2s;"></em>
+<em class="active epic-icon fa fa-heart floating" style="top:33.333333333333336%;left:8.125%;animation-delay:-0.05s;"></em>
+<em class="active epic-icon fa fa-heart floating" style="top:19.120135363790187%;left:34.0625%;animation-delay:-3.25s;"></em>
+<em class="active epic-icon fa fa-heart floating" style="top:40.77834179357022%;left:66.09375%;animation-delay:-2.25s;"></em>
+<em class="active epic-icon fa fa-android floating" style="top:78.68020304568527%;left:0.625%;animation-delay:-3.15s;"></em>
+<em class="active epic-icon fa fa-android floating" style="top:44.83925549915398%;left:95.625%;animation-delay:-2.5s;"></em>
+<em class="active epic-icon fa fa-apple floating" style="top:77.32656514382403%;left:93.125%;animation-delay:-3s;"></em>
+
+
+        </div>
+    </div>
+
+    <!-- Epic scripts -->
+    <script src="assets/jquery/jquery-1.11.3.min.js" type="text/javascript" defer></script>
+
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+      <script src="assets/ie7-js/IE9.min.js" async></script>
+    <![endif]-->
     <script type='text/javascript'>
   var Module = {
     TOTAL_MEMORY: 268435456,
