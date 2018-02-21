@@ -22,21 +22,15 @@
   
   
   <body class="template">
-	
- 
-	
-    <div class="template-wrap clear" style="z-index: 99; margin-top: 100px;">
-      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
-      <br>
-      <div class="logo"></div>
-      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
-      <div class="title">Лодка</div>
-    </div>
+
 	<div class="backwrap gradient">
-	<p style="color: white; font-size: 44px; text-align: center;" >Добро пожаловать на сайт мини-игры 'Пираты'</p>
-  	<p style="color: white; font-size: 23px; text-align: center;" >Разработчик - Бадретдинов Тимур Рустемович, гимназия 115, 9Б класс</p>
-	<p style="color: white; font-size: 23px; text-align: center;" >Пожалуйста, подождите, когда загрузится игра, это займет не больше минуты</p>
-	<a href="rool.html" style="color: white; font-size: 44px; text-align: center;" >Правила</a>
+		<h1 style="color: white; font-size: 44px; text-align: center; padding-bottom: 40px;">Правила игры "Пираты"</h1>
+
+		<p style="color: white; font-size: 32px; text-align: center;">Управление осуществляется стрелками на клавиатуре. 
+		Ваша цель - найти нужное кол-во сундуков с золотом, чтобы стать богатым пиратом. <br><br>
+		Когда вы нашли сундук - нажмите на него левой клавишей мышки так, чтобы он исчез, если это не происходит, попробуйте подъехать ближе.
+		</p>
+		
 		<div class="back-shapes">
 		<em class="active epic-icon fa fa-windows floating" style="top:8.460236886632826%;left:2.65625%;animation-delay:-3.55s;"></em>
 <em class="active epic-icon fa fa-windows floating" style="top:3.7225042301184432%;left:92.5%;animation-delay:-1.2s;"></em>
@@ -64,32 +58,6 @@
 
         </div>
     </div>
-
-    <!-- Epic scripts -->
-    <script src="assets/jquery/jquery-1.11.3.min.js" type="text/javascript" defer></script>
-
-    <!--[if gte IE 9]>
-      <style type="text/css">
-        .gradient {
-           filter: none;
-        }
-      </style>
-      <script src="assets/ie7-js/IE9.min.js" async></script>
-    <![endif]-->
-    <script type='text/javascript'>
-  var Module = {
-    TOTAL_MEMORY: 268435456,
-    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-    compatibilitycheck: null,
-    backgroundColor: "#222C36",
-    splashStyle: "Light",
-    dataUrl: "Release/Builds.data",
-    codeUrl: "Release/Builds.js",
-    asmUrl: "Release/Builds.asm.js",
-    memUrl: "Release/Builds.mem",
-  };
-</script>
-<script src="Release/UnityLoader.js"></script>
 
   </body>
 </html>
